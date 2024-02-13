@@ -1,0 +1,47 @@
+.bgForPC {
+    width: 100%;
+    height: 101.1rem;
+    background-image: url('./assets/bgForDesck.jpg');
+    display: none;
+    align-items: center;
+    text-align: center;
+}
+
+.bgForPC span {
+    font-size: 10rem;
+    color: white;
+    font-weight: bold;
+    -webkit-text-stroke-color: #b32454;
+    -webkit-text-stroke-width: 5px;
+    animation: 3s ease-in-out PCTextAnimation infinite;
+    user-select: none;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fac2dd;
+}
+
+@keyframes PCTextAnimation {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-60px);
+    }
+}
+
+@media(min-width: 768px) {
+    .bgForPC {
+        display: flex;
+    }
+
+    main {
+        display: none;
+    }
+}

@@ -1,0 +1,370 @@
+.envelope {
+    position: relative;
+    height: 20.5rem;
+    width: 30rem;
+    background-color: #a16489;
+    
+}
+
+.envelopePulsation {
+    animation: 2s ease-in-out envelopePulsation infinite;
+}
+
+.envelopeTop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 1s;
+    transform: scaleY(-1) translateY(100%);
+    z-index: 1;
+}
+
+.envelopeBody {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 50;
+}
+
+.valentinka {
+    width: 20rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -10rem;
+    transition: 1s;
+}
+
+.valentinkaClick {
+    top: -1rem;
+    animation: 2s ease-in-out envelopePulsation infinite;
+    z-index: 50;
+}
+
+.bigValentinka {
+    top: -16rem;
+    width: 30rem;
+    left: 50%;
+    margin-left: -15rem;
+    z-index: 50;
+}
+
+.heart1 {
+    width: 7rem;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    bottom: 2.6rem;
+    margin-left: -7rem;
+    z-index: 44;
+}
+
+.heartAnimation1 {
+    animation: heart1 7s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+}
+
+.heart2 {
+    width: 8rem;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    bottom: 2.6rem;
+    margin-left: -5rem;
+    z-index: 44;
+}
+
+.heartAnimation2 {
+    animation: heart2 8s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    animation-delay: 1s;
+}
+
+.heart3 {
+    width: 6rem;
+    text-align: center;
+    position: absolute;
+    left: 80%;
+    bottom: 2.6rem;
+    margin-left: -5rem;
+    z-index: 44;
+}
+
+.heartAnimation3 {
+    animation: heart3 6s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    animation-delay: .5s;
+}
+
+.heart4 {
+    width: 6rem;
+    text-align: center;
+    position: absolute;
+    left: 68%;
+    bottom: 2.6rem;
+    margin-left: -4rem;
+    z-index: 44;
+}
+
+.heartAnimation4 {
+    animation: heart4 5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    animation-delay: .3s;
+}
+
+.heart5 {
+    width: 5rem;
+    text-align: center;
+    position: absolute;
+    left: 30%;
+    bottom: 2.6rem;
+    margin-left: -5rem;
+    z-index: 44;
+}
+
+.heartAnimation5 {
+    animation: heart5 6s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    animation-delay: .2s;
+}
+
+@keyframes envelopePulsation {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes heart1 {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+
+    10% {
+        transform: translateY(-5rem) translateX(2rem);
+    }
+
+    20% {
+        transform: translateY(-10rem) translateX(-2rem);
+    }
+
+    30% {
+        transform: translateY(-15rem) translateX(2rem);
+    }
+
+    40% {
+        transform: translateY(-20rem) translateX(-2rem);
+    }
+
+    50% {
+        transform: translateY(-25rem) translateX(2rem);
+    }
+
+    60% {
+        transform: translateY(-30rem) translateX(-2rem);
+    }
+
+    70% {
+        transform: translateY(-35rem) translateX(2rem);
+    }
+
+    80% {
+        transform: translateY(-40rem) translateX(-2rem);
+    }
+
+    90% {
+        transform: translateY(-45rem) translateX(2rem);
+    }
+
+    100% {
+        transform: translateY(-50rem) translateX(0);
+    }
+}
+
+@keyframes heart2 {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+
+    10% {
+        transform: translateY(-5rem) translateX(6rem);
+    }
+
+    20% {
+        transform: translateY(-10rem) translateX(-4rem);
+    }
+
+    30% {
+        transform: translateY(-15rem) translateX(6rem);
+    }
+
+    40% {
+        transform: translateY(-20rem) translateX(-4rem);
+    }
+
+    50% {
+        transform: translateY(-25rem) translateX(6rem);
+    }
+
+    60% {
+        transform: translateY(-30rem) translateX(-4rem);
+    }
+
+    70% {
+        transform: translateY(-35rem) translateX(6rem);
+    }
+
+    80% {
+        transform: translateY(-40rem) translateX(-4rem);
+    }
+
+    90% {
+        transform: translateY(-45rem) translateX(6rem);
+    }
+
+    100% {
+        transform: translateY(-50rem) translateX(0);
+    }
+}
+
+@keyframes heart3 {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+
+    10% {
+        transform: translateY(-5rem) translateX(4rem);
+    }
+
+    20% {
+        transform: translateY(-10rem) translateX(-4rem);
+    }
+
+    30% {
+        transform: translateY(-15rem) translateX(4rem);
+    }
+
+    40% {
+        transform: translateY(-20rem) translateX(-4rem);
+    }
+
+    50% {
+        transform: translateY(-25rem) translateX(4rem);
+    }
+
+    60% {
+        transform: translateY(-30rem) translateX(-4rem);
+    }
+
+    70% {
+        transform: translateY(-35rem) translateX(4rem);
+    }
+
+    80% {
+        transform: translateY(-40rem) translateX(-4rem);
+    }
+
+    90% {
+        transform: translateY(-45rem) translateX(4rem);
+    }
+
+    100% {
+        transform: translateY(-50rem) translateX(0);
+    }
+}
+
+@keyframes heart4 {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+
+    10% {
+        transform: translateY(-5rem) translateX(1rem);
+    }
+
+    20% {
+        transform: translateY(-10rem) translateX(-1rem);
+    }
+
+    30% {
+        transform: translateY(-15rem) translateX(1rem);
+    }
+
+    40% {
+        transform: translateY(-20rem) translateX(-1rem);
+    }
+
+    50% {
+        transform: translateY(-25rem) translateX(1rem);
+    }
+
+    60% {
+        transform: translateY(-30rem) translateX(-1rem);
+    }
+
+    70% {
+        transform: translateY(-35rem) translateX(1rem);
+    }
+
+    80% {
+        transform: translateY(-40rem) translateX(-1rem);
+    }
+
+    90% {
+        transform: translateY(-45rem) translateX(1rem);
+    }
+
+    100% {
+        transform: translateY(-50rem) translateX(0);
+    }
+}
+
+@keyframes heart5 {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+
+    10% {
+        transform: translateY(-5rem) translateX(3rem);
+    }
+
+    20% {
+        transform: translateY(-10rem) translateX(-3rem);
+    }
+
+    30% {
+        transform: translateY(-15rem) translateX(3rem);
+    }
+
+    40% {
+        transform: translateY(-20rem) translateX(-3rem);
+    }
+
+    50% {
+        transform: translateY(-25rem) translateX(3rem);
+    }
+
+    60% {
+        transform: translateY(-30rem) translateX(-3rem);
+    }
+
+    70% {
+        transform: translateY(-35rem) translateX(3rem);
+    }
+
+    80% {
+        transform: translateY(-40rem) translateX(-3rem);
+    }
+
+    90% {
+        transform: translateY(-45rem) translateX(3rem);
+    }
+
+    100% {
+        transform: translateY(-50rem) translateX(0);
+    }
+}
