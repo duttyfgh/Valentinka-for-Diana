@@ -1,4 +1,4 @@
-import { MouseEventHandler, useState } from 'react'
+import {useState } from 'react'
 import envelopeBody from './assets/envelopeBody.svg'
 import envelopeOpenTop from './assets/envelopeOpenTop.svg'
 import envelopeTop from './assets/envelopeTop.svg'
@@ -28,13 +28,6 @@ const Envelope = () => {
         setTimeout(() => {
             setIsLittleHearts(false)
         }, 7200)
-    }
-
-    const closeEnvelope = () => {
-        setIsOpen(false)
-        setTimeout(() => {
-            setPhoto(envelopeTop)
-        }, interval)
     }
 
     const getValentinka = () => {
